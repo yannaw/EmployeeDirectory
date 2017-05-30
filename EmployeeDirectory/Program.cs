@@ -11,6 +11,7 @@ namespace EmployeeDirectory {
             Directory directory = new Directory();
 
             Console.WriteLine("Avsluta med enter");
+
 /******* V 1    ******/
             //           List<Employee> directory = new List<Employee>();
             // Array - fix, Lista = dynamisk
