@@ -1,0 +1,41 @@
+﻿C# grund
+string funkar ej med regex, En lösning är replace. 
+"var" innebär att kompilatorn sköter typning. Bör ej användas då det inte framgår tydligt vad som returneras som tex vid komplexa objekt.
+ungersk notation är när namnet anger vilken typ, tex int som heter intName, stringen strName.
+
+DRY		Dont repeat yourself - copy-paste-kodning
+
+switch			en selektionskonstruktion. 
+flödeskonstruktion	3 fundamentala. 
+		sekvens				gör saker i följd, tex matrecept	X-> X -> X -> so
+		selektion			vägval. Om ja -> gör detta. Annars detta  if/else. switch. Efter att detta exekverats fortsätter programmet. 
+							switch ersätter if/else-kedja break måste finnas i C# i varje cases. KAn ersättas med continue men används sällan då det oftast är en bugg. 
+switch - frågor							continue el goto? är et möjligt med ranches dvs case 1 tom 4?
+		iteration			loop. upprepar tills ett villkor är sant. for, do/while
+
+
+		felhantering		try/catch	man kan skippa instansiera undntag om man inte har ngn nytta av det . Catch(IoExeption){cw(message)}
+							finally kommer nästan alltid att exekveras utan vissa undntag som processoravslut. 
+
+Employeeprogrammet.
+Problemet med directory-classen är att den kr beroende av console-fönstret. Den skriver ut i consol. Lösningen är att returnera stringen till anroparen (här main)
+Vill göra:			1.	fråga efter ny anställd	cw	
+					2.	hämta svaret			rw 
+					3.	parsa svaret
+					4.	felhantering
+					5.	itereras för namn/lön
+					6.	iterera om fler anställda tills null
+
+return				lämnar alltid metoden.
+break				bryter loop
+
+static				använder ingen instans, oftast säkert att flytta ut till egen class
+
+Kortkommandon
+					Ctrl+Q		snabbsök
+					ctr+shift+space		metoder
+					out int result = out specificerar att värdet är ett resultat av operation
+					ctr+R ctr+R = rename all
+					ctr+.	= Faktorering tar bort onödig mellanlagring i variabler
+					ctr+F12		hoppar till metod
+					prop tab constructor
